@@ -1,0 +1,22 @@
+﻿<Window x:Class="DevOps_SecurityCase4.View.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevOps_SecurityCase4.View"
+        mc:Ignorable="d"
+        Title="Home" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+
+        <Grid Background="#BAD7F2">
+            <TextBlock FontSize="30" Text="Anime list" HorizontalAlignment="Center"   VerticalAlignment="Top" Margin="300,10,300,0"/>
+            <Button Background="#BAF2BB" FontSize="30" HorizontalAlignment="center" Width="180" Margin="410,180,190,180" Click="myList">
+                <TextBlock Text="My list" Width="Auto" HorizontalAlignment="Left" />
+            </Button>
+            <Button Background="#BAF2BB" FontSize="30" HorizontalAlignment="center" Width="180" Margin="170,180,430,180" Click="NewAnime">
+                <TextBlock Text="Add anime" Width="Auto" HorizontalAlignment="Left" />
+            </Button>
+        </Grid>
+
+    </DockPanel>
+</Window>
