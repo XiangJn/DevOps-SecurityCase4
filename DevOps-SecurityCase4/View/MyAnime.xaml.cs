@@ -23,5 +23,12 @@ namespace DevOps_SecurityCase4.View
         {
             InitializeComponent();
         }
+
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            this.Close();
+            home.Show();
+        }
     }
 }
