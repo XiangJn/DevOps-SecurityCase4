@@ -17,3 +17,6 @@ D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\View\MyAnime.g.cs
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\View\AddAnime.baml
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\View\MyAnime.baml
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\Dapper.dll
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\Dapper.xml
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.csproj.CopyComplete

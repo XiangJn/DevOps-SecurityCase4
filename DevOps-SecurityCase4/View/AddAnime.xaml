@@ -13,19 +13,11 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock FontSize="30" Text="Add new anime" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="60,10,60,10" Height="50" Width="216" RenderTransformOrigin="0.698,1.036" Grid.Column="1"/>
-        <ListView Grid.Column="0" 
-                Background="#BAD7F2"
-                  SelectionMode="Single" 
-                 >
+        <ListView Grid.Column="0" Background="#BAD7F2" SelectionMode="Single">
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Width="300" 
-                                    
-                                    Header="Anime"  
-                                     />
-                    <GridViewColumn Width="100" 
-                                    Header="Score"
-                                     />
+                    <GridViewColumn Width="300" Header="Anime"/>
+                    <GridViewColumn Width="100" Header="Score"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -34,7 +26,7 @@
             <TextBox Margin="10,5,10,10" />
             <Button Margin="10,5,10,10" Content="Search" Background="#BAF2BB" />
             <Label Content="Anime"  Margin="10,20,10,0"/>
-            <TextBox Margin="10,5,10,10" />
+            <TextBox Margin="10,5,10,10" IsReadOnly="True"/>
             <Label Content="Status"  Margin="10,0,10,0"/>
             <ComboBox  Margin="10,5,10,0">
                 <ComboBoxItem>Watching</ComboBoxItem>
@@ -44,7 +36,6 @@
                 <ComboBoxItem>Plan to watch</ComboBoxItem>
             </ComboBox>
             <Button Margin="10,20,10,10" Content="Add" Background="#BAF2BB" />
-
         </StackPanel>
         <Button FontSize="15" HorizontalAlignment="Left" Width="70" Margin="315,380,0,10" Padding="0"  Grid.Column="1" Background="#BAF2BB" Click="Home">
             <TextBlock Text="Home" Width="Auto" HorizontalAlignment="Left" />

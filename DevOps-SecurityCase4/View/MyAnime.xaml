@@ -19,20 +19,14 @@
                  >
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Width="250" 
-                                    
-                                    Header="Anime"  
-                                     />
-                    <GridViewColumn Width="150" 
-                                    Header="Status"
-                                     />
+                    <GridViewColumn Width="250" Header="Anime"/>
+                    <GridViewColumn Width="150" Header="Status"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <StackPanel Grid.Column="1" Margin="0,63,0,51">
-
-            <Label Content="Anime"  Margin="10,20,10,0"/>
-            <TextBox Margin="10,5,10,10" />
+            <Label Content="Anime" Margin="10,20,10,0"/>
+            <TextBox Margin="10,5,10,10" IsReadOnly="True"/>
             <Label Content="Status"  Margin="10,0,10,0"/>
             <ComboBox  Margin="10,5,10,0">
                 <ComboBoxItem>Watching</ComboBoxItem>
@@ -42,7 +36,6 @@
                 <ComboBoxItem>Plan to watch</ComboBoxItem>
             </ComboBox>
             <Button Margin="10,20,10,10" Content="Update" Background="#BAF2BB" />
-
         </StackPanel>
         <Button FontSize="15" HorizontalAlignment="Left" Width="70" Margin="315,380,0,10" Padding="0"  Grid.Column="1" Background="#BAF2BB" Click="Home">
             <TextBlock Text="Home" Width="Auto" HorizontalAlignment="Left" />

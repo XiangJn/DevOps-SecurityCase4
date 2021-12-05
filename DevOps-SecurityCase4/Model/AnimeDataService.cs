@@ -12,35 +12,35 @@ namespace DevOps_SecurityCase4.Model
                 ConfigurationManager.ConnectionStrings["azure"].ConnectionString;
         private static IDbConnection db = new SqlConnection(connectionString);
 
-        public List<Anime> GetHighscore()
+        public List<Anime> GetAnime()
         {
-            string sql = "Select * from Anime order by Turns";
+            string sql = "Select * from Anime order by Title";
             return (List<Anime>)db.Query<Anime>(sql);
         }
 
-        public void UpdateHighscore(Anime anime)
+        public void UpdateAnime(Anime anime)
         {
-            string sql = "Update Anime set playerId = @playerId, turns = @turns where id = @id";
+            string sql = "Update Anime set title = @title, status = @status where id = @id";
             db.Execute(sql, new
             {
-                anime.PlayerId,
-                anime.Turns,
+                anime.Title,
+                anime.Status,
                 anime.ID
             });
         }
 
-        public void InsertHighscore(Anime anime)
+        public void InsertAnime(Anime anime)
         {
-            string sql = "Insert into Anime (playerId, turns) values (@playerId, @turns)";
+            string sql = "Insert into Anime (title, status) values (@title, @status)";
             db.Execute(sql, new
             {
-                anime.PlayerId,
-                anime.Turns
+                anime.Title,
+                anime.Status
             });
         }
 
 
-        public void DeleteHighscore(Anime anime)
+        public void DeleteAnime(Anime anime)
         {
             string sql = "Delete Anime where id = @id";
             db.Execute(sql, new { anime.ID });
