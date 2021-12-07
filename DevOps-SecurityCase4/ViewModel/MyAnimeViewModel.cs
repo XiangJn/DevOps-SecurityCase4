@@ -49,14 +49,13 @@ namespace DevOps_SecurityCase4.ViewModel
 
         private void ConnectCommands()
         {
-            ChangeCommand = new BaseCommand(ChangeAnime);
+            UpdateCommand = new BaseCommand(UpdateAnime);
             DeleteCommand = new BaseCommand(DeleteAnime);
-            AddCommand = new BaseCommand(AddAnime);
         }
 
         public ICommand DeleteCommand { get; set; }
-        public ICommand ChangeCommand { get; set; }
-        public ICommand AddCommand { get; set; }
+        public ICommand UpdateCommand { get; set; }
+   
 
 
 
@@ -69,7 +68,7 @@ namespace DevOps_SecurityCase4.ViewModel
             Anime = new ObservableCollection<Anime>(animeDS.GetAnime());
         }
 
-        public void ChangeAnime()
+        public void UpdateAnime()
         {
             if (CurrentAnime != null)
             {
@@ -80,17 +79,6 @@ namespace DevOps_SecurityCase4.ViewModel
                 //Refresh
                 ReadAnime();
             }
-        }
-
-
-        public void AddAnime()
-        {
-            AnimeDataService animeDS =
-                new AnimeDataService();
-            animeDS.InsertAnime(CurrentAnime);
-
-            //Refresh
-            ReadAnime();
         }
 
 

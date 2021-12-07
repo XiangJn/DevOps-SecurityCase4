@@ -20,7 +20,7 @@
         <TextBlock FontSize="30" Text="Add new anime" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="60,10,60,10" Height="50" Width="216" RenderTransformOrigin="0.698,1.036" Grid.Column="1"/>
         <ListView Grid.Column="0" Background="#BAD7F2" SelectionMode="Single"
                    ItemsSource="{Binding animeInfo}" 
-                  SelectedItem="{Binding CurrentAnime}">>
+                  SelectedItem="{Binding CurrentAnime}">
             <ListView.View>
                 <GridView >
                     <GridViewColumn Width="400" Header="Anime" x:Name="animeTitle" DisplayMemberBinding="{Binding Title}" />

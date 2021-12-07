@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DevOps_SecurityCase4.View"
+        xmlns:viewmodel="clr-namespace:DevOps_SecurityCase4.ViewModel"
         mc:Ignorable="d"
         Title="MyAnime" Height="450" Width="800">
-    <Grid Background="#BAD7F2">
+    <Window.Resources>
+        <viewmodel:MyAnimeViewModel x:Key="MyAnimeViewModel"/>
+    </Window.Resources>
+    <Grid Background="#BAD7F2" DataContext="{StaticResource MyAnimeViewModel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -16,26 +20,27 @@
         <ListView Grid.Column="0" 
                 Background="#BAD7F2"
                   SelectionMode="Single" 
-                 >
+                  ItemsSource="{Binding Anime}" 
+                  SelectedItem="{Binding CurrentAnime}">
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Width="250" Header="Anime"/>
-                    <GridViewColumn Width="150" Header="Status"/>
+                    <GridViewColumn Width="200" Header="Anime" DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn Width="100" Header="Status" DisplayMemberBinding="{Binding Status}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <StackPanel Grid.Column="1" Margin="0,63,0,51">
             <Label Content="Anime" Margin="10,20,10,0"/>
-            <TextBox Margin="10,5,10,10" IsReadOnly="True"/>
-            <Label Content="Status"  Margin="10,0,10,0"/>
-            <ComboBox  Margin="10,5,10,0">
+            <TextBox Margin="10,5,10,10" IsReadOnly="True" Text="{Binding CurrentAnime.Title}"/>
+            <Label Content="Status"  Margin="10,0,10,0" />
+            <ComboBox  Margin="10,5,10,0" Text="{Binding CurrentAnime.Status}">
                 <ComboBoxItem>Watching</ComboBoxItem>
                 <ComboBoxItem>Completed</ComboBoxItem>
                 <ComboBoxItem>On-hold</ComboBoxItem>
                 <ComboBoxItem>Dropped</ComboBoxItem>
                 <ComboBoxItem>Plan to watch</ComboBoxItem>
             </ComboBox>
-            <Button Margin="10,20,10,10" Content="Update" Background="#BAF2BB" />
+            <Button Margin="10,20,10,10" Content="Update" Background="#BAF2BB"  Command="{Binding UpdateCommand}"/>
         </StackPanel>
         <Button FontSize="15" HorizontalAlignment="Left" Width="70" Margin="315,380,0,10" Padding="0"  Grid.Column="1" Background="#BAF2BB" Click="Home">
             <TextBlock Text="Home" Width="Auto" HorizontalAlignment="Left" />
