@@ -19,7 +19,20 @@ namespace DevOps_SecurityCase4.ViewModel
             //SearchAnime("tr");
         }
 
-        public Anime animeInfo;
+        private ObservableCollection<Anime> anime;
+        public ObservableCollection<Anime> Anime
+        {
+            get
+            {
+                return anime;
+            }
+
+            set
+            {
+                anime = value;
+                NotifyPropertyChanged();
+            }
+        }
 
         private Anime currentAnime;
         public Anime CurrentAnime
@@ -40,12 +53,12 @@ namespace DevOps_SecurityCase4.ViewModel
             }
         }
 
-        private async void SearchAnime(string animeName)
-        {
-            animeInfo = await AnimeProcessor.LoadAnime(animeName);
-            Trace.WriteLine(animeInfo);
+        //private async void SearchAnime(string animeName)
+        //{
+        //    Anime = await AnimeProcessor.LoadAnime(animeName);
+        //    Trace.WriteLine(animeInfo);
 
-        }
+        //}
 
         private void ConnectCommands()
         {
@@ -57,9 +70,8 @@ namespace DevOps_SecurityCase4.ViewModel
         {
             AnimeDataService animeDS =
                 new AnimeDataService();
-            animeDS.InsertAnime(CurrentAnime);
-
-      
+            animeDS.InsertAnime(CurrentAnime);    
         }
+
     }
 }

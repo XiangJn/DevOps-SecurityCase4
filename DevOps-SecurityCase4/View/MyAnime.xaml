@@ -41,6 +41,7 @@
                 <ComboBoxItem>Plan to watch</ComboBoxItem>
             </ComboBox>
             <Button Margin="10,20,10,10" Content="Update" Background="#BAF2BB"  Command="{Binding UpdateCommand}"/>
+            <Button Margin="10,20,10,10" Content="Delete" Background="#BAF2BB"  Command="{Binding DeleteCommand}"/>
         </StackPanel>
         <Button FontSize="15" HorizontalAlignment="Left" Width="70" Margin="315,380,0,10" Padding="0"  Grid.Column="1" Background="#BAF2BB" Click="Home">
             <TextBlock Text="Home" Width="Auto" HorizontalAlignment="Left" />
