@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,6 @@ namespace DevOps_SecurityCase4.Model
         private int id;
         private string title;
         private string status;
- 
 
 
 
@@ -47,9 +47,8 @@ namespace DevOps_SecurityCase4.Model
                 NotifyPropertyChanged();
             }
         }
+    
 
-
-
-
+ 
     }
 }

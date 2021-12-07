@@ -22,14 +22,20 @@ namespace DevOps_SecurityCase4.View
         public AddAnime()
         {
             InitializeComponent();
+            ApiHelper.InitializeClient();
         }
 
-
+      
         private void Home(object sender, RoutedEventArgs e)
         {
             Home home = new Home();
             this.Close();
             home.Show();
+        }
+
+        private void SeachAnime(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

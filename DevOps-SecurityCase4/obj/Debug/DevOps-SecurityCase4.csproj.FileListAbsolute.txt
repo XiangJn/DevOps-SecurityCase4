@@ -20,3 +20,8 @@ D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\Dapper.dll
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\Dapper.xml
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.csproj.CopyComplete
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\Newtonsoft.Json.dll
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\System.Net.Http.Formatting.dll
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\Newtonsoft.Json.xml
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\System.Net.Http.Formatting.xml
+D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\GeneratedInternalTypeHelper.g.cs

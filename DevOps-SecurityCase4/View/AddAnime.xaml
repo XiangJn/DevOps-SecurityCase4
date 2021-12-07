@@ -4,38 +4,44 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DevOps_SecurityCase4.View"
-        mc:Ignorable="d"
+        xmlns:viewmodel="clr-namespace:DevOps_SecurityCase4.ViewModel"
+        mc:Ignorable="d"     
         Title="AddAnime" Height="450" Width="800">
-    <Grid Background="#BAD7F2">
+    <Window.Resources>
+        <viewmodel:AddAnimeViewModel x:Key="AddAnimeViewModel"/>
+    </Window.Resources>
+
+    <Grid Background="#BAD7F2" DataContext="{StaticResource AddAnimeViewModel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <TextBlock FontSize="30" Text="Add new anime" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="60,10,60,10" Height="50" Width="216" RenderTransformOrigin="0.698,1.036" Grid.Column="1"/>
-        <ListView Grid.Column="0" Background="#BAD7F2" SelectionMode="Single">
+        <ListView Grid.Column="0" Background="#BAD7F2" SelectionMode="Single"
+                   ItemsSource="{Binding animeInfo}" 
+                  SelectedItem="{Binding CurrentAnime}">>
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Width="300" Header="Anime"/>
-                    <GridViewColumn Width="100" Header="Score"/>
+                    <GridViewColumn Width="400" Header="Anime" x:Name="animeTitle" DisplayMemberBinding="{Binding Title}" />
                 </GridView>
             </ListView.View>
         </ListView>
         <StackPanel Grid.Column="1" Margin="0,63,0,51">
             <Label Content="Search"  Margin="10,5,10,0"/>
             <TextBox Margin="10,5,10,10" />
-            <Button Margin="10,5,10,10" Content="Search" Background="#BAF2BB" />
+            <Button Margin="10,5,10,10" Content="Search" Background="#BAF2BB" Click="SeachAnime" />
             <Label Content="Anime"  Margin="10,20,10,0"/>
-            <TextBox Margin="10,5,10,10" IsReadOnly="True"/>
+            <TextBox Margin="10,5,10,10" Text="{Binding CurrentAnime.Title}"/>
             <Label Content="Status"  Margin="10,0,10,0"/>
-            <ComboBox  Margin="10,5,10,0">
+            <ComboBox  Margin="10,5,10,0" Text="{Binding CurrentAnime.Status}">
                 <ComboBoxItem>Watching</ComboBoxItem>
                 <ComboBoxItem>Completed</ComboBoxItem>
                 <ComboBoxItem>On-hold</ComboBoxItem>
                 <ComboBoxItem>Dropped</ComboBoxItem>
                 <ComboBoxItem>Plan to watch</ComboBoxItem>
             </ComboBox>
-            <Button Margin="10,20,10,10" Content="Add" Background="#BAF2BB" />
+            <Button Margin="10,20,10,10" Content="Add" Background="#BAF2BB" Command="{Binding AddCommand}"/>
         </StackPanel>
         <Button FontSize="15" HorizontalAlignment="Left" Width="70" Margin="315,380,0,10" Padding="0"  Grid.Column="1" Background="#BAF2BB" Click="Home">
             <TextBlock Text="Home" Width="Auto" HorizontalAlignment="Left" />
