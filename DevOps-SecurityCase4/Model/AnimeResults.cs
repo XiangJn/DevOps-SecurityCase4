@@ -8,7 +8,7 @@ namespace DevOps_SecurityCase4.Model
 {
     class AnimeResults : BaseModel
     {
-        public List<AnimeTitle> results { get; set; }
+        public List<Anime> results { get; set; }
 
        
     }

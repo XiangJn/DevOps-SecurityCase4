@@ -102,7 +102,6 @@
     <Compile Include="Model\Anime.cs" />
     <Compile Include="Model\AnimeDataService.cs" />
     <Compile Include="Model\AnimeResults.cs" />
-    <Compile Include="Model\AnimeTitle.cs" />
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="ViewModelLocator.cs" />
     <Compile Include="ViewModel\AddAnimeViewModel.cs" />
