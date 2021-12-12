@@ -13,8 +13,6 @@ namespace DevOps_SecurityCase4.Model
         private string title;
         private string status;
 
-
-
         public int ID
         {
             get { return id; }
@@ -47,8 +45,7 @@ namespace DevOps_SecurityCase4.Model
                 NotifyPropertyChanged();
             }
         }
-    
 
- 
+    
     }
 }

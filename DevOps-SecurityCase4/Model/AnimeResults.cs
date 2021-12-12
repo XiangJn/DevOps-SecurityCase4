@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DevOps_SecurityCase4.Model
 {
-    class AnimeResult
+    class AnimeResults : BaseModel
     {
-        public Anime Results { get; set; }
+        public List<AnimeTitle> results { get; set; }
+
+       
     }
 }

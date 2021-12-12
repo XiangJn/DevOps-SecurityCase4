@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,7 +23,6 @@ namespace DevOps_SecurityCase4.View
         public AddAnime()
         {
             InitializeComponent();
-            ApiHelper.InitializeClient();
         }
 
       
@@ -33,9 +33,7 @@ namespace DevOps_SecurityCase4.View
             home.Show();
         }
 
-        private void SeachAnime(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
+    
     }
 }

@@ -19,18 +19,18 @@
 
         <TextBlock FontSize="30" Text="Add new anime" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="60,10,60,10" Height="50" Width="216" RenderTransformOrigin="0.698,1.036" Grid.Column="1"/>
         <ListView Grid.Column="0" Background="#BAD7F2" SelectionMode="Single"
-                   ItemsSource="{Binding Anime}" 
+                  ItemsSource="{Binding AnimeTitle.results}" 
                   SelectedItem="{Binding CurrentAnime}">
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Width="400" Header="Anime" x:Name="animeTitle" DisplayMemberBinding="{Binding Title}" />
+                    <GridViewColumn Width="400" Header="Anime" DisplayMemberBinding="{Binding Title}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <StackPanel Grid.Column="1" Margin="0,63,0,51">
+        <StackPanel Grid.Column="1" Margin="0,63,0,39">
             <Label Content="Search"  Margin="10,5,10,0"/>
-            <TextBox Margin="10,5,10,10" />
-            <Button Margin="10,5,10,10" Content="Search" Background="#BAF2BB" Click="SeachAnime" />
+            <TextBox Margin="10,5,10,10" Text="{Binding SearchTitle}"/>
+            <Button Margin="10,5,10,10" Content="Search" Background="#BAF2BB"  Command="{Binding SearchCommand}" />
             <Label Content="Anime"  Margin="10,20,10,0"/>
             <TextBox Margin="10,5,10,10" Text="{Binding CurrentAnime.Title}"/>
             <Label Content="Status"  Margin="10,0,10,0"/>

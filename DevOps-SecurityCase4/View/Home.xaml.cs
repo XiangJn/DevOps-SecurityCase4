@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevOps_SecurityCase4.API;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace DevOps_SecurityCase4.View
         public Home()
         {
             InitializeComponent();
+            ApiHelper.InitializeClient();
         }
 
       
