@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevOps-SecurityCase4.exe" size="31160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevOps-SecurityCase4.exe" size="31672">
       <assemblyIdentity name="DevOps-SecurityCase4" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kBGsDcQR0nG+7/gxQrk6bCY2vh7dnrG+TMA1d/vhSxc=</dsig:DigestValue>
+        <dsig:DigestValue>3gNd7M5M/un/KaVBRHmpOHYN0zjQElWEow2pCC5D15s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

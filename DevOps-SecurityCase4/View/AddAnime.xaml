@@ -32,7 +32,7 @@
             <TextBox Margin="10,5,10,10" Text="{Binding SearchTitle}"/>
             <Button Margin="10,5,10,10" Content="Search" Background="#BAF2BB"  Command="{Binding SearchCommand}" />
             <Label Content="Anime"  Margin="10,20,10,0"/>
-            <TextBox Margin="10,5,10,10" Text="{Binding CurrentAnime.Title}"/>
+            <TextBox Margin="10,5,10,10" IsReadOnly="True" Text="{Binding CurrentAnime.Title}"/>
             <Label Content="Status"  Margin="10,0,10,0"/>
             <ComboBox  Margin="10,5,10,0" Text="{Binding CurrentAnime.Status}">
                 <ComboBoxItem>Watching</ComboBoxItem>
