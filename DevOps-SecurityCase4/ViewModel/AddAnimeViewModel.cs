@@ -53,22 +53,6 @@ namespace DevOps_SecurityCase4.ViewModel
             }
         }
 
-
-        private Anime anime;
-        public Anime Anime
-        {
-            get
-            {
-                return anime;
-            }
-
-            set
-            {
-                anime = value;
-                NotifyPropertyChanged();
-            }
-        }
-
         
         private Anime currentAnime;
         public Anime CurrentAnime

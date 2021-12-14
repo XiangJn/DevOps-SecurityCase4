@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows"
+    "\\.github\\workflows",
+    "\\DevOps-SecurityCase4",
+    "\\DevOps-SecurityCase4\\API"
   ],
-  "SelectedNode": "\\.github\\workflows\\deploy-my-animelist.yml",
+  "SelectedNode": "\\DevOps-SecurityCase4.sln",
   "PreviewInSolutionExplorer": false
 }
