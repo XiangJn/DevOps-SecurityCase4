@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deployment App
 
 # Controls when the workflow will run
 on:
@@ -35,6 +35,6 @@ jobs:
         run: nuget restore DevOps-SecurityCase4.sln
       
       - name: Builde the Solution
-        run: msbuild DevOps-SecurityCase4.sln
+        run: msbuild DevOps-SecurityCase4.sln /p:Configuration=Release
 
 
