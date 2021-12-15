@@ -35,12 +35,12 @@ jobs:
         run: nuget restore DevOps-SecurityCase4.sln
       
       - name: Builde the Solution
-        run: msbuild DevOps-SecurityCase4.sln /p:Configuration=Release 
+        run: msbuild DevOps-SecurityCase4.sln /p:Configuration=Release /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+ 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: published_webapp
+          path: bin\Release\Publish
  
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v1.0.0
-        with:
-          name: published_webapp
-          path: bin\Release\Publish
-
 
