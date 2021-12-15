@@ -35,10 +35,9 @@ jobs:
         run: nuget restore DevOps-SecurityCase4.sln
       
       - name: Builde the Solution
-        run: msbuild DevOps-SecurityCase4.sln /p:Configuration=Release /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
-
+        run: msbuild DevOps-SecurityCase4.sln /p:Configuration=Release /p:Configuration=Release /p:DeployOnBuild=true 
       - name: Upload Artifact
         uses: actions/upload-artifact@v1.0.0
         with:
-          name: published_webapp
+          name: published_MyAnimeList
           path: bin\Release\Publish
