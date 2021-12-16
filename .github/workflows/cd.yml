@@ -66,9 +66,8 @@ jobs:
     env:
       App_Packages_Archive: AppPackages.zip
       App_Packages_Directory: AppPackages
-      SigningCertificate: GitHubActionsDemo.pfx
+      SigningCertificate: SecurityCase4_TemporaryKey.pfx
       Solution_Path: DevOps-SecurityCase4.sln
-      Test_Project_Path: DevOps-SecurityCase4.Tests\DevOps-SecurityCase4.Tests.csproj
       Wpf_Project_Path: DevOps-SecurityCase4\DevOps-SecurityCase4.csproj
       Wap_Project_Directory: DevOps-SecurityCase4.Package
       Wap_Project_Name: DevOps-SecurityCase4.Package.wapproj
