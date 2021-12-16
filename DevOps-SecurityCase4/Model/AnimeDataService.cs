@@ -8,8 +8,8 @@ namespace DevOps_SecurityCase4.Model
 {
     class AnimeDataService
     {
-        private static string connectionString =
-                ConfigurationManager.ConnectionStrings["azure"].ConnectionString;
+        private static string connectionString = "Server=tcp:r0744382-3itf.database.windows.net,1433;Initial Catalog = SQLDB3ITF; Persist Security Info=False;User ID = admin3ITF; Password=Password3; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;";
+
         private static IDbConnection db = new SqlConnection(connectionString);
 
         public List<Anime> GetAnime()

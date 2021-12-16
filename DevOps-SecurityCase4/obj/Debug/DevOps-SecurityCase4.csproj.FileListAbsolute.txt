@@ -25,7 +25,3 @@ D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.csproj.CopyComplete
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.exe
 D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.pdb
-D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\DevOps-SecurityCase4.exe.manifest
-D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\bin\Debug\DevOps-SecurityCase4.application
-D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.exe.manifest
-D:\school\DevOps & Security\DevOps-SecurityCase4\DevOps-SecurityCase4\obj\Debug\DevOps-SecurityCase4.application
